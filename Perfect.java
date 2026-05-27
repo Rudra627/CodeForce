@@ -7,7 +7,7 @@ public class Perfect{
         for(int i=1;i<=num;i++){
             int x=obj.nextInt();
             for(int j=1;j<x;j++){
-                System.out.print(j+1);
+                System.out.print(j+1+" ");
             }
             System.out.println();
         }

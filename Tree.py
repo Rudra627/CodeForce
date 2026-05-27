@@ -1,10 +1,7 @@
-class Node:
-    data = None
-    left = None
-    right = None
-    def __init__(self, data):
-        self.data = data
-class Tree:
-    root = None
-    def __init__(self, data):
-        self.root = Node(data)
+s="axxxxyyyyb"
+part = "xy"
+while part in s:
+    idx=s.find(part)
+    print(idx)
+    s=s.replace(s[idx:idx+len(part)],"")
+    print(s)
