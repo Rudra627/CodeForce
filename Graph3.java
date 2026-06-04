@@ -56,7 +56,7 @@ public class Graph3{
     }
     public static void printAllpath(ArrayList<Edge>[] graph,int src,int des,String path){
         if(src==des){
-            System.out.print(path+des);
+            System.out.print("path="+path+des);
         }
         for(int i=0;i<graph[src].size();i++){
             Edge e=graph[src].get(i);
@@ -82,7 +82,7 @@ public class Graph3{
         graph[4].add(new Edge(4,1));
         graph[5].add(new Edge(5,0));
         graph[5].add(new Edge(5,2));
-        topologicalsort(graph);
+        // topologicalsort(graph);
         printAllpath(graph, 5, 1, "");
     }
 }
